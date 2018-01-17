@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery lightGallery demo</title>
+        <link href="./css/bootstrap.css" rel="stylesheet">
+        <link href="./css/lightgallery.css" rel="stylesheet">
+        <link href="./css/lightgallery-extra.css" rel="stylesheet">    
+    </head>
+    <body class="home">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            
+                <div style="height:50px;"></div>
+            
+        <div class="demo-gallery">
+            <ul id="lightgallery" class="list-unstyled row">
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/SpaceCat.jpg" data-src="img/SpaceCat.jpg" data-sub-html="<h4>Space Cat</h4><p>A cat from outer space.</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/SpaceCat.jpg" alt="Thumb-1">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/LS3.jpg" data-src="img/LS3.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/LS3.jpg" alt="Thumb-2">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="img/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/thumb-13.jpg" alt="Thumb-3">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="img/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/thumb-4.jpg" alt="Thumb-4">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <!-- Javascript Gallery -->
+    <script src="./js/picturefill.js"></script>
+    <script src="./js/lightgallery.js"></script>
+    <script src="./js/lg-pager.js"></script>
+    <script src="./js/lg-autoplay.js"></script>
+    <script src="./js/lg-fullscreen.js"></script>
+    <script src="./js/lg-zoom.js"></script>
+    <script src="./js/lg-hash.js"></script>
+    <script src="./js/lg-share.js"></script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
+    </body>
+</html>
